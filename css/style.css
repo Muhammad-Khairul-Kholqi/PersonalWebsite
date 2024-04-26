@@ -1,0 +1,108 @@
+.tittle-header,
+.bio,
+.contact,
+.experience,
+.education,
+.age {
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.slider-container {
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+    .slider-item {
+      scroll-snap-align: start;
+      flex: 0 0 auto;
+    }
+/* @media (max-width: 870px) {
+    .foto-saya {
+        width: 270px;
+    }
+
+    .title-about-me {
+        font-size: 10px;
+    }
+
+    .bio,
+    .contact {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 870px) {
+    .foto-saya {
+        width: 230px;
+    }
+}
+
+@media (max-width: 715px) {
+    .bio,
+    .contact {
+        width: 120px;
+    }
+}
+
+@media (max-width: 655px) {
+    .foto-saya {
+        width: 180px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio-contact {
+        display: flex;
+        gap: 30px;
+    }
+
+    .exp-edc-age {
+        display: flex;
+    }
+
+    .bio {
+        width: 200px;
+    }
+
+    .container-contact {
+        margin-top: -1px;
+    }
+}
+
+@media (max-width: 485px) {
+    .bio {
+        width: 150px;
+    }
+}
+
+@media (max-width: 450px) {
+    .bio {
+        width: 100px;
+    }
+
+    .bio,
+    .contact {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .bio-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-contact {
+        margin-left: 20px;
+    }
+
+    .bio,
+    .contact {
+        font-size: 13px;
+    }
+} */
