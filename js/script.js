@@ -70,29 +70,6 @@ document.addEventListener('click', function (e) {
     }
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // script dark background
 const darkIcon = document.getElementById('dark');
 const lightIcon = document.getElementById('light');
