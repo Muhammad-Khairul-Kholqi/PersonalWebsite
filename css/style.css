@@ -1,108 +1,231 @@
-.tittle-header,
-.bio,
-.contact,
-.experience,
-.education,
-.age {
-    /* font-family: 'Times New Roman', Times, serif; */
-}
-
+/* style slider */
 .slider-container {
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-    }
-    .slider-item {
-      scroll-snap-align: start;
-      flex: 0 0 auto;
-    }
-/* @media (max-width: 870px) {
-    .foto-saya {
-        width: 270px;
-    }
-
-    .title-about-me {
-        font-size: 10px;
-    }
-
-    .bio,
-    .contact {
-        font-size: 13px;
-    }
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 870px) {
-    .foto-saya {
-        width: 230px;
-    }
+.slider-item {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
 }
 
-@media (max-width: 715px) {
-    .bio,
-    .contact {
-        width: 120px;
-    }
+/* style dark mode */
+.bi.bi-cloud-moon.hidden {
+    display: none;
 }
 
-@media (max-width: 655px) {
-    .foto-saya {
-        width: 180px;
+body.bg-black {
+    background-color: #000;
+    color: #fff;
+}
+
+body.bg-white {
+    background-color: #fff;
+    color: #000;
+}
+
+body.bg-white .fullname-keahlian {
+    color: #000;
+}
+
+body.bg-black .fullname-keahlian {
+    color: #fff;
+}
+
+body.bg-white .seputar-saya {
+    color: #000;
+}
+
+body.bg-black .seputar-saya {
+    color: #fff;
+}
+
+body.bg-white .bg-black-button {
+    background-color: #fff; 
+    color: #000; 
+    border-color: #1D4ED8;
+}
+
+body.bg-white .bg-black-button:hover {
+    background-color: #1D4ED8;
+    color: #fff;
+}
+
+body.bg-black .bg-black-button {
+    background-color: #000; 
+    color: #fff; 
+    border-color: #1D4ED8; 
+}
+
+body.bg-white .bg-card-light {
+    background-color: #D1D5DB;
+    color: #000;
+}
+
+body.bg-white .text-skill-light {
+    color: #000; 
+}
+
+body.bg-white .text-project-light {
+    color: #000; 
+}
+
+body.bg-white .title-project-light {
+    color: #000; 
+}
+
+body.bg-white .title-serifikat-light {
+    color: #000; 
+}
+
+body.bg-white .img-project {
+    filter: grayscale(0);
+}
+
+body.bg-white .img-project:hover {
+    filter: grayscale(100%);
+}
+
+body.bg-white .icon-logo-navbar {
+    background-color: #fff;
+}
+
+body.bg-white .icon-header {
+    color: #000;
+}
+
+body.bg-white nav {
+    color: #000;
+}
+
+/* responsive */
+@media (max-width: 755px) {
+    .dua-keahlian {
+        font-size: 30px;
     }
 }
 
 @media (max-width: 600px) {
-    .about-me {
-        flex-direction: column;
-        align-items: center;
+    .icon-logo-navbar {
+        flex-direction: column; 
+        align-items: center; 
     }
 
-    .bio-contact {
-        display: flex;
-        gap: 30px;
+    .icon-header {
+        order: 3; 
+        margin-top: 10px; 
     }
 
-    .exp-edc-age {
-        display: flex;
+    .logo-container {
+        order: 1; 
+        margin-right: auto; 
     }
 
-    .bio {
-        width: 200px;
-    }
-
-    .container-contact {
-        margin-top: -1px;
+    nav {
+        order: 2; 
+        margin-left: auto;
     }
 }
 
-@media (max-width: 485px) {
-    .bio {
-        width: 150px;
+
+@media (max-width: 695px) {
+    .fullname {
+        font-size: 30px;
     }
 }
 
-@media (max-width: 450px) {
-    .bio {
-        width: 100px;
+@media (max-width: 480px) {
+    .dua-keahlian {
+        font-size: 20px;
     }
 
-    .bio,
-    .contact {
+    .seputar-saya {
         font-size: 10px;
     }
 }
 
-@media (max-width: 360px) {
-    .bio-contact {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 445px) {
+    .fullname {
+        font-size: 20px;
+    }
+}
+
+#hamburger-menu {
+    display: none;
+    width: 30px;
+}
+
+@media (max-width: 600px) {
+    #hamburger-menu {
+        display: inline-block;
+        /* margin-top: -1px; */
     }
 
-    .container-contact {
-        margin-left: 20px;
+    .navbar .navbar-nav-link {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #000;
+        width: 13rem;
+        height: 290px;
+        transition: 0.3s;
+        border-top: 3px solid #0060FF;
+        border-bottom-left-radius: 5px;
+        margin-top: -1px;
     }
 
-    .bio,
-    .contact {
-        font-size: 13px;
+    body.bg-white .navbar .navbar-nav-link {
+        background-color: #fff;
     }
-} */
+
+    body.bg-white .navbar .navbar-nav-link a {
+        color: #000;
+    }
+
+    body.bg-white .hamburger {
+        color: #000;
+    }
+
+    .navbar .navbar-nav-link.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav-link a {
+        color: #fff;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 18px;
+    }
+
+    .navbar .navbar-nav-link a::after {
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav-link a:hover::after {
+        transform: scaleX(0.2);
+    }
+
+    .navbar .navbar-nav-link a:hover {
+        background-color: #0060FF;
+    }
+
+    .navbar .navbar-nav-link a::after {
+        background-color: #0060FF;
+        padding-bottom: 1px;
+    }
+
+    .navbar .navbar-nav-link a:hover {
+        background-color: #0060FF;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+
+
+
