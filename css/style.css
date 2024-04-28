@@ -123,6 +123,14 @@ body.bg-white nav {
     color: #000;
 }
 
+body.bg-white .button-github {
+    background-color: #1D4ED8;
+}
+
+body.bg-white .button-github:hover {
+    background-color: #1E40AF;
+}
+
 /* responsive */
 @media (max-width: 755px) {
     .dua-keahlian {
