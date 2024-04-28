@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* style slider */
 .slider-container {
     overflow-x: scroll;
@@ -89,6 +93,26 @@ body.bg-white .img-project:hover {
 
 body.bg-white .icon-logo-navbar {
     background-color: #fff;
+}
+
+body.bg-white .card-contact {
+    background-color: #ddd;
+    color: #000;
+}
+
+body.bg-white .maps {
+    background-color: #ddd;
+    color: #000;
+}
+
+body.bg-white footer {
+    background-color: #ededed;
+    color: #000;
+}
+
+
+body.bg-white .tittle-contact {
+    color: #000;
 }
 
 body.bg-white .icon-header {

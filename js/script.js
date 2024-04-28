@@ -89,3 +89,6 @@ lightIcon.addEventListener('click', function() {
   document.body.classList.remove('bg-black');
   document.body.classList.add('bg-white');
 });
+
+// copyright
+document.getElementById("copyrightYear").innerText = new Date().getFullYear();
